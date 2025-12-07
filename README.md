@@ -1,7 +1,7 @@
 # Bluesky Post Action
 
 <p align="center">
-  <img src=".github/assets/cute_robot_in_the_center_with_a_blue_sky.jpg">
+  <img src=".github/assets/cute_robot_in_the_center_with_a_blue_sky.jpg" alt="robot in the clouds">
 </p>
 
 GitHub Action to post to [bsky.app](bsky.app)
@@ -36,7 +36,7 @@ jobs:
   bsky-post:
     runs-on: ubuntu-latest
     steps:
-      - uses: zentered/bluesky-post-action@v0.0.1
+      - uses: zentered/bluesky-post-action@{LATEST_VERSION}
         with:
           post: ${{ inputs.post }}
           service: ${{ inputs.service }}
@@ -55,6 +55,10 @@ jobs:
 ## Outputs
 
 ![screenshot of github comment](.github/assets/output.png)
+
+### With website embeds
+
+![screenshot of bluesky post with website embed](https://github.com/user-attachments/assets/2e7f8b07-baca-4421-80ec-082afe24cad3)
 
 ## Testing
 
